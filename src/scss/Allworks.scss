@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+@media only screen and (max-width: 768px) {
+  .allWorksInfo {
+    padding: 20px;
+
+    .header {
+      margin: 10px auto;
+      margin-bottom: 20px;
+      .arrow {
+        transform: rotate(180deg);
+        font-size: 1.5rem;
+        color: #666;
+      }
+    }
+    .heading {
+      text-align: center;
+      position: relative;
+      .name {
+        font-size: 1.6rem;
+        color: var(--theme);
+        font-weight: 600;
+      }
+
+      .Line {
+        height: 4px;
+        width: 80px;
+        background-color: var(--theme);
+        border-radius: 50px;
+        position: absolute;
+        bottom: -14%;
+        left: 46%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .btn {
+      border: none;
+      background-color: var(--theme);
+      width: 100px;
+      height: 50px;
+      color: var(--white);
+      margin-right: 10px;
+      font-size: 1.1rem;
+    }
+
+    .flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .css-17qaqbl-MuiPaper-root-MuiCard-root {
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .css-h93ljk-MuiTypography-root {
+      margin-top: 0.35rem;
+      font-size: 1.4;
+    }
+
+    .container {
+      margin-top: 40px;
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .allWorksInfo {
+    margin-bottom: 40px;
+    padding: 20px;
+    .header {
+      margin-top: 10px;
+      .arrow {
+        transform: rotate(180deg);
+        font-size: 1.5rem;
+        color: #666;
+      }
+    }
+    .heading {
+      margin-top: 50px;
+      text-align: center;
+      position: relative;
+      .name {
+        font-size: 2rem;
+        color: var(--theme);
+        font-weight: 500;
+      }
+
+      .Line {
+        height: 6px;
+        width: 80px;
+        background-color: var(--theme);
+        border-radius: 50px;
+        position: absolute;
+        bottom: -14%;
+        left: 48%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .btn {
+      border: none;
+      background-color: var(--theme);
+      width: 100px;
+      height: 50px;
+      color: var(--white);
+      margin-right: 10px;
+      font-size: 1.1rem;
+    }
+
+    .flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .css-17qaqbl-MuiPaper-root-MuiCard-root {
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .css-h93ljk-MuiTypography-root {
+      margin-top: 0.35rem;
+      font-size: 1.4;
+    }
+
+    .container {
+      margin-top: 20px;
+
+      .css-h5fkc8 {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .css-h5fkc8 > div {
+        width: 24%;
+        margin: 5px auto;
+        margin-top: 20px;
+      }
+    }
+  }
+}

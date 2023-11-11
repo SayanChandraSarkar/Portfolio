@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+$theme: #2451f0;
+$theme1: #5454c5;
+$fontGray: #666;
+$white: #ffff;
+:root {
+  --theme: #{$theme};
+  --theme1: #{$theme1};
+  --fontGray: #{$fontGray};
+  --white: #{$white};
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+@media only screen and (max-width: 767px) {
+  .testimonialInfos {
+    padding: 20px;
+    .box {
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      margin-top: 30px;
+
+      .first {
+        display: flex;
+        width: 100% !important;
+        .profile {
+          width: 70px;
+          height: 70px;
+          border-radius: 20px 20px 0 20px;
+          overflow: hidden;
+          background-color: #d9d9d9;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .info {
+          width: 80%;
+          .nameStars {
+            display: flex;
+            margin-left: 15px;
+            justify-content: space-between;
+            margin-top: 10px;
+
+            .name {
+              font-size: 1.2rem;
+              font-weight: 500;
+
+              p {
+                font-size: 0.9rem;
+                color: #646f87;
+                margin-top: 2px;
+              }
+            }
+
+            .stars {
+              margin-top: 7px;
+            }
+          }
+        }
+      }
+    }
+
+    .second {
+      padding: 5px;
+      margin-top: 5px;
+      .feedback {
+        text-align: left;
+        font-size: 1rem;
+        color: #646f87;
+      }
+    }
+
+    .header {
+      margin-bottom: 20px;
+      .arrow {
+        transform: rotate(180deg);
+        font-size: 1.5rem;
+        color: #666;
+      }
+    }
+    .heading {
+      text-align: center;
+      position: relative;
+      .name {
+        font-size: 1.6rem;
+        color: var(--theme);
+        font-weight: 600;
+      }
+
+      .Line {
+        height: 4px;
+        width: 80px;
+        background-color: var(--theme);
+        border-radius: 50px;
+        position: absolute;
+        bottom: -14%;
+        left: 38%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+@media only screen and (min-width: 767px) {
+  .testimonialInfos {
+    padding: 20px;
+
+    .width {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .width > div {
+      width: 30%;
+      margin: 0px 24px;
+      margin-top: 30px;
+    }
+    .box {
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      margin-top: 30px;
+
+      .first {
+        display: flex;
+        width: 100% !important;
+        .profile {
+          width: 70px;
+          height: 70px;
+          border-radius: 20px 20px 0 20px;
+          overflow: hidden;
+          background-color: #d9d9d9;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .info {
+          width: 80%;
+          .nameStars {
+            display: flex;
+            margin-left: 15px;
+            justify-content: space-between;
+            margin-top: 10px;
+
+            .name {
+              font-size: 1.2rem;
+              font-weight: 500;
+
+              p {
+                font-size: 0.9rem;
+                color: #646f87;
+                margin-top: 2px;
+              }
+            }
+
+            .stars {
+              margin-top: 7px;
+            }
+          }
+        }
+      }
+    }
+
+    .second {
+      padding: 5px;
+      margin-top: 5px;
+      .feedback {
+        text-align: left;
+        font-size: 1rem;
+        color: #646f87;
+      }
+    }
+
+    .header {
+      margin-bottom: 20px;
+      .arrow {
+        transform: rotate(180deg);
+        font-size: 1.5rem;
+        color: #666;
+      }
+    }
+    .heading {
+      text-align: center;
+      position: relative;
+      margin-bottom: 20px;
+      .name {
+        font-size: 1.6rem;
+        color: var(--theme);
+        font-weight: 600;
+      }
+
+      .Line {
+        height: 4px;
+        width: 100px;
+        background-color: var(--theme);
+        border-radius: 50px;
+        position: absolute;
+        top: 50%;
+        left: 44%;
+        margin-top: 12px;
+      }
+    }
+  }
+}

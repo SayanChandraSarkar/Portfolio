@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 767px) {
+  header .headerLogoName {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    width: 100%;
+
+    img {
+      width: 150px;
+    }
+    .Menuicon {
+      width: 30px;
+      margin-right: 5px;
+    }
+  }
+  .drawerImage img {
+    width: 150px;
+  }
+  .drawer {
+    position: relative;
+    z-index: 999999;
+  }
+
+  .drawerBio p {
+    padding: 5px 5px 20px 20px;
+    font-weight: 500;
+    color: #999;
+  }
+  .css-10hburv-MuiTypography-root {
+    font-size: 1.2rem !important;
+    margin-left: 8px !important;
+  }
+  .css-1160xiw-MuiPaper-root-MuiDrawer-paper {
+    width: 300px;
+  }
+  .connecWithSocials {
+    padding: 20px;
+    margin-top: 10px;
+
+    .connect {
+      font-size: 1.4rem;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+    .socialmediaIcons {
+      display: flex;
+
+      .icon {
+        font-size: 2.2rem;
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header .headerLogoName {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    width: 100%;
+
+    img {
+      width: 150px;
+    }
+    .Menuicon {
+      width: 30px;
+      margin-right: 5px;
+    }
+  }
+
+  header.active {
+    background-color: #ffffff40;
+    backdrop-filter: blur(10px);
+  }
+  header {
+    padding: 0 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+
+    .section {
+      display: flex;
+      margin-right: 20px;
+
+      .MuiListItem-root {
+        margin: auto 10px;
+      }
+      .none {
+        display: none;
+      }
+      ul {
+        display: flex;
+
+        li:hover {
+          a {
+            color: var(--theme);
+            background-color: transparent !important;
+            transition: 0.4s;
+          }
+        }
+      }
+    }
+
+    .css-1hskriy {
+      width: 100% !important;
+    }
+  }
+}
