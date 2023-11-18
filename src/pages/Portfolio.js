@@ -548,7 +548,7 @@ export const Myportfolio = () => {
           <div className="details">
             <div className="contactForm">
               <div className="container">
-                <form action="" method="post">
+                {/* <form action="../api/contact_us.php" method="POST">
                   <div className="inputs">
                     <div className="fullName">
                       <div className="names">
@@ -615,7 +615,58 @@ export const Myportfolio = () => {
                       </button>
                     </div>
                   </div>
-                </form>
+                </form> */}
+
+                <div className="contact">
+                  <div className="address box">
+                    <div className="icon">
+                      <Icon icon="ic:round-home" />
+                    </div>
+                    <div className="info">
+                      <div className="xxcc">
+                        <div className="head">Address</div>
+                        <div className="infoContact">
+                          <a
+                            href="https://maps.app.goo.gl/TACxQ7np8SU3aN3dA"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {" "}
+                            Abhayapuri, Bongaigaon, Assam, Pin- 783384
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="emailMe box">
+                    <div className="icon">
+                      <Icon icon="ic:round-phone" />
+                    </div>
+                    <div className="info">
+                      <div className="xxcc">
+                        <div className="head">Call Me</div>
+                        <div className="infoContact">
+                          <a href="tel:8011658412">+91 8011658412</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="phoneNumber box">
+                    <div className="icon">
+                      <Icon icon="ic:round-email" />
+                    </div>
+                    <div className="info">
+                      <div className="xxcc">
+                        <div className="head">Email Me</div>
+                        <div className="infoContact">
+                          <a href="mailto:sledgecoder@gmail.com">
+                            sledgecoder@gmail.com
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
