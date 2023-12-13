@@ -33,7 +33,7 @@ const cardsData = [
   {
     id: 3,
     title: "Nexus.ai",
-    image: "/images/works/nexusai.png",
+    image: "/images/works/Nexusai.png",
     link: "#",
   },
 ];
