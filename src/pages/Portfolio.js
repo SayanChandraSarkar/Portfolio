@@ -97,7 +97,7 @@ export const Myportfolio = () => {
             visually stunning and user-centric digital experiences.
           </div>
           <div className="btn">
-            <button href="../Resume/Sayan Resume.pdf" download>
+            <button href="../Resume/Sayan-Resume.pdf" download>
               Download CV
             </button>
           </div>
