@@ -70,8 +70,8 @@ export const Myportfolio = () => {
 
   const downloadResume = () => {
     const link = document.createElement("a");
-    link.href = "../Resume/Sayan-Resume.pdf";
-    link.download = "Sayan-Resume.pdf";
+    link.href = "/resume/SayanResume.pdf";
+    link.download = "SayanResume.pdf";
     link.click();
   };
 
