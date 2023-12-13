@@ -799,6 +799,13 @@ $white: #ffff;
         border: none;
         background-color: var(--theme1);
         color: var(--white);
+        transition: 0.4s ease-in-out;
+
+        &:hover {
+          background-color: #2a2a8c;
+          color: #ffff;
+          cursor: pointer;
+        }
       }
     }
 
