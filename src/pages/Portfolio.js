@@ -68,6 +68,13 @@ export const Myportfolio = () => {
     navigate("/all-testimonial");
   };
 
+  const downloadResume = () => {
+    const link = document.createElement("a");
+    link.href = "../Resume/Sayan-Resume.pdf";
+    link.download = "Sayan-Resume.pdf";
+    link.click();
+  };
+
   return (
     <>
       <Header />
@@ -97,9 +104,7 @@ export const Myportfolio = () => {
             visually stunning and user-centric digital experiences.
           </div>
           <div className="btn">
-            <button href="../Resume/Sayan-Resume.pdf" download>
-              Download CV
-            </button>
+            <button onClick={downloadResume}>Download CV</button>
           </div>
           <div className="connecSocialMedia">
             <div className="connect">Connect With Me</div>
