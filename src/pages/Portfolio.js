@@ -32,9 +32,9 @@ const cardsData = [
   },
   {
     id: 3,
-    title: "Portfolio",
-    image: "/images/works/portfolio.png",
-    link: "https://ariyansdesigns.in?/",
+    title: "Nexus.ai",
+    image: "/images/works/nexusai.png",
+    link: "#",
   },
 ];
 

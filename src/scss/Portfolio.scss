@@ -1073,9 +1073,10 @@ $white: #ffff;
     }
     .css-h5fkc8 {
       display: flex;
+      justify-content: center;
     }
     .css-h5fkc8 > div {
-      width: 33.33%;
+      width: 25%;
       margin: 50px 50px 5px 50px;
     }
     .css-17qaqbl-MuiPaper-root-MuiCard-root {
@@ -1095,7 +1096,13 @@ $white: #ffff;
       color: var(--white);
       margin-right: 10px;
       font-size: 0.9rem;
-      pointer-events: none;
+      transition: 0.4s ease-in-out;
+
+      &:hover {
+        color: var(--theme);
+        background-color: var(--white);
+        border: 1px solid var(--theme);
+      }
     }
 
     .flex {

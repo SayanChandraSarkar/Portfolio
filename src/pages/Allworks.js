@@ -31,9 +31,9 @@ const cardsData = [
   },
   {
     id: 4,
-    title: "Portfolio",
-    image: "../images/works/portfolio.png",
-    link: "https://ariyansdesigns.in/ ",
+    title: "Nexusai",
+    image: "../images/works/Nexusai.png",
+    link: "https://nexusai-two.vercel.app/",
   },
   {
     id: 5,
@@ -58,6 +58,12 @@ const cardsData = [
     title: "Music Player",
     image: "../images/works/musicplayer.png",
     link: "https://musiccally.netlify.app/",
+  },
+  {
+    id: 9,
+    title: "Logistic Tracking Sytem",
+    image: "../images/works/logistic.jpg",
+    link: "#",
   },
 ];
 export const AllWorksPage = () => {
