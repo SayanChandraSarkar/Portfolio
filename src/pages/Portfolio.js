@@ -34,7 +34,7 @@ const cardsData = [
     id: 3,
     title: "Nexus.ai",
     image: "/images/works/Nexusai.png",
-    link: "#",
+    link: "https://nexusai-two.vercel.app/",
   },
 ];
 
