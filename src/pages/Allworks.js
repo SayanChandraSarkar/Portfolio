@@ -13,59 +13,84 @@ import "../scss/Allworks.scss";
 const cardsData = [
   {
     id: 1,
-    title: "Grocered",
-    image: "../images/works/grocered.png",
-    link: "https://grocered.in/",
+    title: "HR Management System",
+    image: "../images/works/hrms.png",
+    link: "",
   },
   {
     id: 2,
-    title: "Archmary Studio",
-    image: "../images/works/archmary.png",
-    link: "https://archmary.com/",
+    title: "Typing Website",
+    image: "/images/works/TypingWebsite.png",
+    link: "https://typing-test-app-2d074.web.app",
   },
   {
     id: 3,
-    title: "Netflix",
-    image: "../images/works/Netflix.png",
-    link: "https://poetic-gingersnap-ad16b7.netlify.app/",
+    title: "CraneBuffer Calculation",
+    image: "../images/works/cranebuffer.png",
+    link: "https://calculation.cranebuffer.com/",
   },
   {
     id: 4,
+    title: "VK Car Repo System",
+    image: "../images/works/Vkcarrepo.png",
+    link: "",
+  },
+  {
+    id: 5,
     title: "Nexusai",
     image: "../images/works/Nexusai.png",
     link: "https://nexusai-two.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
+    title: "Wedding Site",
+    image: "../images/works/wedding.png",
+    link: "https://weeding-site-prw2.vercel.app/",
+  },
+  {
+    id: 7,
+    title: "Grocered",
+    image: "../images/works/grocered.png",
+    link: "https://grocered.in/",
+  },
+  {
+    id: 8,
+    title: "Google Mapr",
+    image: "../images/works/googlemapr.png",
+    link: "https://googlemapr.netlify.app/",
+  },
+  {
+    id: 9,
     title: "Joke Generator",
     image: "../images/works/jokes.png",
     link: "https://jokes-generators.netlify.app/",
   },
   {
-    id: 6,
+    id: 10,
     title: "Todo List",
     image: "../images/works/Todolist.png",
     link: "https://todolist-sayanchandrasarkar.vercel.app/",
   },
   {
-    id: 7,
+    id: 11,
     title: "Loan Calculator",
     image: "../images/works/loancalculator.png",
     link: "https://aloancalculator.netlify.app/",
   },
   {
-    id: 8,
+    id: 12,
     title: "Music Player",
     image: "../images/works/musicplayer.png",
     link: "https://musiccally.netlify.app/",
   },
-  {
-    id: 9,
-    title: "Logistic Tracking Sytem",
-    image: "../images/works/logistic.jpg",
-    link: "#",
-  },
+  // {
+  //   id: 13,
+  //   title: "Logistic Tracking System",
+  //   image: "../images/works/logistic.jpg",
+  //   link: "#",
+  // },
 ];
+
 export const AllWorksPage = () => {
   const navigate = useNavigate();
 
@@ -95,7 +120,7 @@ export const AllWorksPage = () => {
 
                 <div className="flex">
                   <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
+                    <Typography gutterBottom variant="h6" component="div">
                       {card.title}
                     </Typography>
                   </CardContent>
@@ -105,6 +130,7 @@ export const AllWorksPage = () => {
                       component={Link}
                       to={card.link}
                       target="_blank"
+                      disabled={!card.link}
                     >
                       Link
                     </Button>

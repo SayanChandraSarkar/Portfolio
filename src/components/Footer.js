@@ -15,7 +15,7 @@ export const Footer = () => {
               <div className="footerImg">
                 <img src="footerLogo.png" alt="logo" />
               </div>
-              <div className="rights">&copy; 2023. All rights reserved</div>
+              <div className="rights">&copy; 2024. All rights reserved</div>
               <div className="madeLove">
                 Made with{" "}
                 <Icon icon="emojione-v1:red-heart" className="heart" /> by{" "}

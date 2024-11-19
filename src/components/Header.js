@@ -165,11 +165,59 @@ export const Header = () => {
     </Drawer>
   );
 
+  const clicked = async () => {
+    // test API
+    // const response = await fetch("http://localhost:5000/api?post-id=1000");
+
+    // const user = { name: "random name", address: "address 1" };
+    // const options = {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(user),
+    // };
+    // const response = await fetch("http://localhost:5000/users", options);
+
+    // put or update user object
+    // const user = { name: "name v2", address: "address v2" };
+    // const options = {
+    //   method: "PUT",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(user),
+    // };
+    // await fetch("http://localhost:5000/users/2", options);
+
+    // put or update user object
+    const user = { name: "name v3" };
+    const options = {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(user),
+    };
+    await fetch("http://localhost:5000/users/2", options);
+
+    // get all users
+    // const response = await fetch("http://localhost:5000/users");
+
+    // const response = await fetch("http://localhost:5000/users/3", {
+    //   method: "DELETE",
+    // });
+
+    const response = await fetch("http://localhost:5000/users");
+    const data = await response.json();
+    console.log(data);
+  };
+
   return (
     <>
       <header className={isHeaderActive ? "active" : ""}>
         <div className="headerLogoName">
-          <img src="devfolioLogo.png" alt="portfolio" />
+          <img src="devfolioLogo.png" alt="portfolio" onClick={clicked} />
           {isMobile ? (
             <>
               <img

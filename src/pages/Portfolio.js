@@ -14,21 +14,34 @@ import Typography from "@mui/material/Typography";
 import { Button } from "@mui/material";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
 
 import "../scss/Portfolio.scss";
+
+// Import required modules
+import { Pagination, Autoplay } from "swiper/modules";
 
 const cardsData = [
   {
     id: 1,
-    title: "Grocered",
-    image: "/images/works/grocered.png",
-    link: "https://grocered.in/",
+    title: "HR Management System",
+    image: "../images/works/hrms.png",
+    link: "",
   },
+  // {
+  //   id: 2,
+  //   title: "Archmary Studio",
+  //   image: "/images/works/archmary.png",
+  //   link: "https://archmary.com/",
+  // },
   {
     id: 2,
-    title: "Archmary Studio",
-    image: "/images/works/archmary.png",
-    link: "https://archmary.com/",
+    title: "Typing Website",
+    image: "/images/works/TypingWebsite.png",
+    link: "https://typing-test-app-2d074.web.app",
   },
   {
     id: 3,
@@ -88,6 +101,7 @@ export const Myportfolio = () => {
               <Typewriter
                 options={{
                   strings: [
+                    "Full Stack Developer",
                     "Web Designer",
                     "Web Developer",
                     "UI/UX designer",
@@ -167,65 +181,75 @@ export const Myportfolio = () => {
           prowess and creative flair.
         </div>
 
-        <div className="experience-skills">
-          <div className="container">
-            <div className="skill">
-              <div className="skillPic">
-                <Icon icon="vscode-icons:file-type-html" className="icon" />
-              </div>
-              <div className="skillName">HTML</div>
-            </div>
-
-            <div className="skill">
-              <div className="skillPic">
-                <Icon icon="vscode-icons:file-type-css" className="icon" />
-              </div>
-              <div className="skillName">CSS</div>
-            </div>
-
-            <div className="skill">
-              <div className="skillPic">
-                <Icon icon="logos:javascript" className="icon" />
-              </div>
-              <div className="skillName">Javascript</div>
-            </div>
-
-            <div className="skill">
-              <div className="skillPic">
-                <Icon icon="devicon:react" className="icon" />
-              </div>
-              <div className="skillName">React.js</div>
-            </div>
-
-            <div className="skill">
-              <div className="skillPic">
-                <Icon icon="devicon:figma" className="icon" />
-              </div>
-              <div className="skillName">Figma</div>
-            </div>
-
-            <div className="skill">
-              <div className="skillPic">
-                <Icon icon="skill-icons:photoshop" className="icon" />
-              </div>
-              <div className="skillName">Photoshop</div>
-            </div>
-
-            <div className="skill">
-              <div className="skillPic">
-                <Icon icon="skill-icons:xd" className="icon" />
-              </div>
-              <div className="skillName">Adobe Xd</div>
-            </div>
-
-            <div className="skill">
-              <div className="skillPic">
-                <Icon icon="devicon:canva" className="icon" />
-              </div>
-              <div className="skillName">Canva</div>
-            </div>
-          </div>
-        </div>
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={10}
+          loop={true}
+          autoplay={{
+            delay: 0,
+            disableOnInteraction: false,
+            // waitForTransition: false,
+            // pauseOnMouseEnter: true,
+            // reverseDirection: false,
+            // Adjust speed as needed
+          }}
+          speed={5000} // Adjust speed as needed
+          loopPreventsSlide={false}
+          breakpoints={{
+            "@0.00": {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            "@0.75": {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            "@1.00": {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            "@1.50": {
+              slidesPerView: 4,
+              spaceBetween: 50,
+            },
+          }}
+          modules={[Pagination, Autoplay]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <img src="/images/skills/html.svg" alt="HTML" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/images/skills/css.svg" alt="CSS" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/images/skills/js.svg" alt="JavaScript" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/images/skills/react.svg" alt="React" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/images/skills/expressjs.svg" alt="Express.js" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/images/skills/nodejs.svg" alt="Node.js" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/images/skills/mongodb.svg" alt="MongoDB" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/images/skills/photoshop.svg" alt="Photoshop" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/images/skills/mysql-logo-pure.svg" alt="MySql" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/images/skills/python-5.svg" alt="Python" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/images/skills/postman.svg" alt="Postman" />
+          </SwiperSlide>
+        </Swiper>
       </div>
 
       {/* Service */}
@@ -413,6 +437,24 @@ export const Myportfolio = () => {
                   </div>
                 </div>
               </div>
+              <div className="flex left">
+                <div className="dots dotleft"></div>
+                <div className="names">
+                  <div className="position">Full Stack Developer</div>
+                  <div className="company">5TechG | Pune</div>
+                  <div className="years1">
+                    <div className="date">Jan 2024 - Present</div>
+                  </div>
+                  <div className="desc justyright">
+                    Full Stack Developer with 11 months of experience in the
+                    MERN stack. Skilled in building dynamic web applications
+                    using MongoDB, Express.js, React.js, and Node.js. Proficient
+                    in GitHub for version control, with foundational knowledge
+                    of MySQL and basic Python. Eager to contribute to innovative
+                    projects and expand expertise in full stack development.
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -420,7 +462,7 @@ export const Myportfolio = () => {
 
       {/* Testimonial */}
 
-      <div className="testimonialInfo" id="section-6">
+      {/* <div className="testimonialInfo" id="section-6">
         <div className="paddingMargin">
           <div className="heading">
             <div className="name">Testimonial</div>
@@ -539,7 +581,7 @@ export const Myportfolio = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Contact Us */}
 
@@ -626,12 +668,14 @@ export const Myportfolio = () => {
 
                 <div className="contact">
                   <div className="address box">
-                    <div className="icon">
-                      <Icon icon="ic:round-home" />
-                    </div>
                     <div className="info">
                       <div className="xxcc">
-                        <div className="head">Address</div>
+                        <div className="flex">
+                          <div className="icon">
+                            <Icon icon="ic:round-home" />
+                          </div>
+                          <div className="head">Address</div>
+                        </div>
                         <div className="infoContact">
                           <a
                             href="https://maps.app.goo.gl/TACxQ7np8SU3aN3dA"
@@ -646,12 +690,14 @@ export const Myportfolio = () => {
                     </div>
                   </div>
                   <div className="emailMe box">
-                    <div className="icon">
-                      <Icon icon="ic:round-phone" />
-                    </div>
                     <div className="info">
                       <div className="xxcc">
-                        <div className="head">Call Me</div>
+                        <div className="flex">
+                          <div className="icon">
+                            <Icon icon="ic:round-phone" />
+                          </div>
+                          <div className="head">Call Me</div>
+                        </div>
                         <div className="infoContact">
                           <a href="tel:8011658412">+91 8011658412</a>
                         </div>
@@ -659,12 +705,14 @@ export const Myportfolio = () => {
                     </div>
                   </div>
                   <div className="phoneNumber box">
-                    <div className="icon">
-                      <Icon icon="ic:round-email" />
-                    </div>
                     <div className="info">
                       <div className="xxcc">
-                        <div className="head">Email Me</div>
+                        <div className="flex">
+                          <div className="icon">
+                            <Icon icon="ic:round-email" />
+                          </div>
+                          <div className="head">Email Me</div>
+                        </div>
                         <div className="infoContact">
                           <a href="mailto:sledgecoder@gmail.com">
                             sledgecoder@gmail.com
