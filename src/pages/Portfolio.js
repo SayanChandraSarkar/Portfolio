@@ -83,7 +83,7 @@ export const Myportfolio = () => {
 
   const downloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/resume/SayanResume.pdf";
+    link.href = "/resume/MyCoverLetter.pdf";
     link.download = "SayanResume.pdf";
     link.click();
   };
